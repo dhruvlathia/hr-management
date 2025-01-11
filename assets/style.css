@@ -1,0 +1,162 @@
+/*
+    Project: HR Management System 
+    Author: Dhruv Lathia (https://www.linkedin.com/in/dhruvlathia) 
+    License: MIT License 
+    Description: This project is open-source under the MIT license. If you reuse any part of this project, kindly provide proper credit to the author. 
+    Thank you for respecting the original creator's work! 
+*/
+
+/* Base Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fc;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #2c3e50, #4c9cfc);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('path-to-image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.85;
+    line-height: 1.5;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-buttons .btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-buttons .btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    display: inline-block;
+    min-height: 205px;
+    margin: 0 15px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.feature-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+.footer-section {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 60px;
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
