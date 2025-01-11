@@ -10,7 +10,7 @@ Thank you for respecting the original creator's work!
     <div class="container p-4 mx-auto text-center">
         <p class="mb-0">© <?php echo date('Y'); ?> HR Management. All rights reserved.</p>
         <p class="mb-0">
-            <p class="text-decoration-none">- By Dhruv Lathia For Practice Purpose</p>
+            <p class="text-decoration-none">- By Dhruv Lathia Under MIT License <a href="https://github.com/dhruvlathia/hr-management" target="_blank">Github</a></p>
         </p>
     </div>
 </footer>

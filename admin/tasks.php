@@ -7,22 +7,8 @@ Thank you for respecting the original creator's work!
 -->
 
 <?php
-session_start();
-
-if ($_SESSION['user_type'] !== 'admin') {
-    header("Location: login.php");
-    exit;
-}
-
-$host = 'localhost';
-$username = 'root'; 
-$password = '';     
-$dbname = 'hr'; 
-$conn = new mysqli($host, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include '../config/admin.php';
+include '../config/db.php';
 
 $query = "
     SELECT t.id, t.title, t.description, t.date, u.username, u.mobile
