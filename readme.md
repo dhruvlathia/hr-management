@@ -114,7 +114,7 @@ This is a web-based HR management system built with **Bootstrap 5.3** and **MySQ
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/dhruvlathia/hr-management
    ```
 
 2. Set up the database:
